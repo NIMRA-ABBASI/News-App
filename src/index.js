@@ -1,14 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import App from './App';
+import Navbar from './Navbar.js';
+import News from './News.js';
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
+root.render(<>
+     <Navbar />
+     <News  pageSize={6} country="in" category="science"/>
+  </>
 );
 
 // If you want to start measuring performance in your app, pass a function

@@ -6,8 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.newsimg
+{
+  width:286px;
+  height:200px;
+  object-fit:cover ;
+}
+.btn span{
+  margin:0 4px;
 }
