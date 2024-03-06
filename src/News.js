@@ -37,7 +37,7 @@ function News(props) {
     <>
      {console.log("Component rendered")}
       <div className="container my-3">
-        <div className="text-center">
+        <div className="text-center my-3">
           <h1>The News - Top Headlines</h1>
         </div>
         {Load && <Spinner />}
@@ -58,6 +58,8 @@ function News(props) {
                       : element.urlToImage
                   }
                   url={element.url}
+                  author = {!element.author ? "Unknown":element.author}
+                  date = {new Date (element.publishedAt).toGMTString()}
                 />
               </div>
             ))}
